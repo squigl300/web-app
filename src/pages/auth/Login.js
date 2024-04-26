@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const token = await loginUser(email, password);
-      // This is where you would normally set the user's logged-in status and token
+      // set the user's logged-in status and token
       console.log('Login successful:', token); // Placeholder console.log
       navigate('/dashboard'); // Navigate to the Dashboard after login
     } catch (error) {
