@@ -5,8 +5,8 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT || 5000;
 
-// Replace with your MongoDB connection string
-const db = 'mongodb+srv://<username>:<password>@yourcluster.mongodb.net/mydb';
+// Replace with MongoDB connection string
+const db = 'mongodb+srv://<username>:<password>@cluster.mongodb.net/mydb';
 
 mongoose
   .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
