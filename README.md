@@ -13,7 +13,7 @@ Notifications (placeholder)
 Installation
 
 Clone the repository:
-Copy codegit clone https://github.com/yourusername/personal-training-management-app.git
+Copy codegit clone https://github.com/squigl300/web-app.git
 
 Install the dependencies:
 Copy codecd personal-training-management-app
@@ -23,7 +23,7 @@ Set up environment variables:
 
 Create a .env file in the root directory.
 Add the following variables:
-Copy codeREACT_APP_API_BASE_URL=your-api-base-url
+Copy code REACT_APP_API_BASE_URL=your-api-base-url
 
 
 
