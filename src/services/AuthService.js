@@ -9,7 +9,7 @@ export const loginUser = async (email, password) => {
   try {
     const response = await axios.post(`${API_BASE_URL}/auth/login`, { email, password });
     const { token } = response.data;
-    // Store the received token in localStorage or your preferred storage
+    // Store the received token in localStorage 
     localStorage.setItem('userToken', token);
     return token;
   } catch (error) {
@@ -17,25 +17,28 @@ export const loginUser = async (email, password) => {
   }
 };
 
+// Function to register user
 export const registerUser = async (userData) => {
   try {
     await axios.post(`${API_BASE_URL}/auth/register`, userData);
-    // You might want to automatically log the user in after registration or redirect to the login page
   } catch (error) {
     throw error;
   }
 };
 
+// Function to recover password
 export const recoverPassword = async (email) => {
     const response = await axios.post(`${API_BASE_URL}/auth/password-recovery`, { email });
     return response.data; // The backend should handle the logic for sending a recovery email
   };
 
+// Function to logout user
   export const logoutUser = () => {
     localStorage.removeItem('userToken');
-    // Any other cleanup logic here
+    
   };
 
+// Function to reset password with firebase
   export const resetPassword = async (email) => {
     try {
       await firebase.auth().sendPasswordResetEmail(email);
