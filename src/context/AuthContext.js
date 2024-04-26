@@ -12,20 +12,20 @@ export const AuthProvider = ({ children }) => {
     const userToken = localStorage.getItem('userToken');
     
     if (userToken) {
-      // Here, we're directly setting the currentUser based on the token
-      // You might want to replace this with a more secure validation step
+      // Directly setting the currentUser based on the token
+      // Needs replaced with a more secure validation step
       setCurrentUser({ token: userToken });
       
-      // In a real app, consider validating the token with the backend
+      // validating the token with the backend needs done
       // to ensure it's still valid and to fetch the user's details
     }
   }, []);
 
   const login = (userData, token) => {
-    // Here, you should update to handle the userData and token properly
+    // Should be updated to handle the userData and token properly
     // Store the token in localStorage to maintain session across refreshes
     localStorage.setItem('userToken', token);
-    setCurrentUser(userData); // Assuming userData contains the necessary user info
+    setCurrentUser(userData); // userData needs to contain the necessary user info
   };
 
   const logout = () => {
