@@ -1,0 +1,74 @@
+/* ProgressTracking.css */
+
+.progress-tracking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adjust the spacing between components */
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 600px; /* Adjust based on your needs */
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .chart-container {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Styles for the client selection table */
+.client-selection-table {
+    width: 100%;
+    max-width: 600px; /* Adjust to match the chart or as needed */
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.client-selection-table th,
+.client-selection-table td {
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 8px; /* Padding for table cells */
+    text-align: left; /* Align text to the left */
+}
+
+.client-selection-table th {
+    background-color: #f9f9f9; /* Light grey background for table headers */
+}
+
+/* Styles for notes sections */
+.client-notes,
+.client-notes-input {
+    width: 100%;
+    max-width: 600px; /* Adjust to match the chart or as needed */
+    margin: auto;
+}
+
+.client-notes {
+    margin-top: 20px;
+}
+
+.client-notes-input textarea,
+.client-notes-input button {
+    display: block; /* Ensure these elements take up the full width available */
+    margin: 10px auto; /* Center horizontally and add some vertical space */
+    padding: 10px; /* Add some padding for aesthetics */
+}
+
+.client-notes-input textarea {
+    width: calc(100% - 24px); /* Adjust width to account for padding */
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+.client-notes-input button {
+    width: auto; /* Allow the button to shrink/grow with its content */
+    cursor: pointer; /* Change cursor to pointer to indicate clickable */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Slightly round the corners */
+}
+
+/* You can add more styles below as needed */

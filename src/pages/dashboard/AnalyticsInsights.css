@@ -1,0 +1,28 @@
+.analytics-container {
+    padding: 20px;
+  }
+  
+  .chart-container {
+    margin-bottom: 30px;
+    max-width: 600px; /* Adjust the maximum width of the charts here */
+  }
+  
+  /* Style for headings or any additional elements */
+  .analytics-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .financial-insights {
+    margin-top: 20px;
+  }
+  
+  .financial-insights h3, .financial-insights h4 {
+    margin-bottom: 10px;
+  }
+  
+  .financial-insights p {
+    margin: 5px 0;
+  }
+  
+  
