@@ -6,10 +6,10 @@ import './firebase/config';
 import { AuthProvider } from './context/AuthContext'; // Import AuthProvider
 import reportWebVitals from './reportWebVitals';
 
-// Create a root element for your app
+// Create a root element
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// Wrap the App component with AuthProvider to make authentication context available throughout your application
+// Wrap the App component with AuthProvider to make authentication context available 
 root.render(
   <React.StrictMode>
     <AuthProvider>
@@ -18,6 +18,5 @@ root.render(
   </React.StrictMode>
 );
 
-// The reportWebVitals is a tool that helps you measure the performance of your app.
-// This function call is optional and can be removed if you are not using it.
+// The reportWebVitals is a tool that helps measure the performance of application
 reportWebVitals();
