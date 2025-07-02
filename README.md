@@ -20,25 +20,4 @@ JavaScript
 HTML
 CSS
 
-Getting Started
 
-Clone the repository
-Install the dependencies using npm install
-Set up the SQLite database and update the database connection in models/db.js
-Start the development server using npm run dev
-Access the application at http://localhost:3000
-
-Project Structure
-
-server.js: Entry point for the backend server
-package.json: Project dependencies and scripts
-controllers/: Backend controllers for handling API requests
-middlewares/: Custom middleware functions
-models/: Database connection and queries
-routes/: Backend API routes
-src/: Frontend source code
-
-components/: Reusable React components
-features/: Feature-specific components and logic
-pages/: Top-level page components
-index.js: Entry point for the frontend application
